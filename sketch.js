@@ -78,4 +78,13 @@ function draw() {
   text("Lives:", 20, 40);
   text(lives, 100, 40);
 }
+//spawns a ball every click
+function mousePressed() {
+  let ball = {
+    x: mouseX,
+    y: height - 100,
+  };
+  balls.push(ball);
+}
+
 

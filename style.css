@@ -28,23 +28,46 @@ h1{
 }
 
 .subhead{
-  opacity:0;
-  transition: opacity 500ms ease-in-out;
+  display: grid;
+  place-items: center;
+  align-content: center;
   text-align: center;
-  text-size-adjust: 50px;
+  font-size: 10em;
+  background-image: url("images/forest.jpg");
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100vh;
 }
-.subhead:hover{
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show{
   opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
+
 body{
   background-color:#85F5AF;
   z-index: 2;
 }
 .body2{
-
+  display: grid;
+  place-items: center;
+  align-content: center;
   margin: 0; /* Remove default margin */
   padding: 10px; /* Optional: Add padding inside the border */
   font-size: 22px;
+  background-image: url("images/desert.jpg");
+  background-size: cover;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 .image-container {
@@ -52,19 +75,6 @@ body{
   display: inline-block; /* Or use a specific width/height */
 }
 
-.image-container img {
-  display: block;
-  width: 100%; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
-  padding: 10px;
-}
-
-.text-overlay {
-  top: 50%; /* Adjust positioning as needed */
-  left: 50%; /* Adjust positioning as needed */
-  color: white; /* Adjust text color */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 5px; /* Optional rounded corners */
-  text-align: left; /* Center text */
+.script{
+  padding-left: 400px;
 }

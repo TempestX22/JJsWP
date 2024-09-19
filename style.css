@@ -1,37 +1,52 @@
-html {
-  margin: 0;
-  padding: 0;
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-canvas {
-  display: block;
-}
 .header{
-  top: 50%;
+  background-color: #60b580;
+  z-index: 1;
+
+}
+h1{
+  top: 100%;
   color: #A66659;
-  background-color: #d7c5c2;
+  background-color: #53babf;
   display: inline-block;
   text-align: left;
-  border-radius: 5px;
-}
-p{
-  color:black;
+  padding: 10px;
+  z-index: 2;
 }
 
+.hover-icon {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.hover-icon:hover {
+  transform: scale(1.2); /* Increase size to 120% */
+}
+
+.subhead{
+  opacity:0;
+  transition: opacity 500ms ease-in-out;
+  text-align: center;
+  text-size-adjust: 50px;
+}
+.subhead:hover{
+  opacity: 1;
+}
 body{
-  border: 5px solid black; /* Adjust thickness, style, and color */
+  background-color:#85F5AF;
+  z-index: 2;
+}
+.body2{
+
   margin: 0; /* Remove default margin */
-  padding: 0px; /* Optional: Add padding inside the border */
+  padding: 10px; /* Optional: Add padding inside the border */
   font-size: 22px;
-  background-color:#836B94;
-  background-image: url("../images/bg1.jpg");
-  background-size: cover;
 }
-.space{
-  width: 100%;
-  height: 100vh;
-  background: black;
-}
+
 .image-container {
   position: relative;
   display: inline-block; /* Or use a specific width/height */
@@ -41,6 +56,7 @@ body{
   display: block;
   width: 100%; /* Adjust as needed */
   height: auto; /* Adjust as needed */
+  padding: 10px;
 }
 
 .text-overlay {
@@ -48,7 +64,7 @@ body{
   left: 50%; /* Adjust positioning as needed */
   color: white; /* Adjust text color */
   background-color: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
-  padding: 10px; /* Adjust padding as needed */
+  padding: 20px; /* Adjust padding as needed */
   border-radius: 5px; /* Optional rounded corners */
   text-align: left; /* Center text */
 }

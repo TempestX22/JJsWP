@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+    <style>
+     .container {
+      display: grid;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image {
+      width: 100%; /* Adjust to your image size */
+      margin-bottom: 0px; /* Spacing between images */
+    }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="refreshImages()">Create the Parties</button>
+    <div class="container">
+        <!-- Repeat this image element 9 times -->
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+        <img src="images\forest.gif" alt="Repeated Image" class="image">
+      </div>
+    <script>
+        
+        const overlayImages = [
+            'images/Beastmaster3.gif',
+            'images/Red Mage1.gif',
+            'images/Black Mage1.gif',
+            'images/Berserker1.gif',
+            'images/Blue Mage1.gif',
+            'images/Dancer4.gif',
+            'images/Time Mage1.gif',
+            'images/Thief5.gif',
+            'images/Summoner1.gif',
+            'images/Samurai3.gif'
+        ];
+
+        
+
+    </script>
+
+  </body>
+</html>

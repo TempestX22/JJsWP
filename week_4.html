@@ -56,7 +56,6 @@
         const partyContainer = document.createElement('div');
         partyContainer.className = 'party-container';
 
-        // Select 4 unique random images for each party
         const selectedImages = [];
         while (selectedImages.length < 4) {
           const randomIndex = Math.floor(Math.random() * overlayImages.length);
@@ -66,7 +65,6 @@
           }
         }
 
-        // Append images to the party container
         selectedImages.forEach(imageSrc => {
           const imgElement = document.createElement('img');
           imgElement.src = imageSrc;
@@ -74,12 +72,10 @@
           partyContainer.appendChild(imgElement);
         });
 
-        // Append each party container to the main wrapper
         partyWrapper.appendChild(partyContainer);
       }
     }
 
-    // Initial load
     generateParties();
   </script>
 </body>

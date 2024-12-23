@@ -91,3 +91,7 @@ body{
 .script{
   padding-left: 400px;
 }
+
+.content {
+  background-color: rgb(9, 110, 110);
+}
